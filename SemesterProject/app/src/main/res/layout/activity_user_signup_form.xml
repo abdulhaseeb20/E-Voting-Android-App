@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBF5EC"
+    tools:context=".UserSignUpForm">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="347dp"
+        android:layout_height="87dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/user_registration"
+        android:textColor="@color/black"
+        android:textSize="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpUsage" />
+
+    <EditText
+        android:id="@+id/txtname"
+        android:layout_width="304dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="136dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/enter_name"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/txtemail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="Autofill,LabelFor,TextSizeCheck" />
+
+    <EditText
+        android:id="@+id/txtemail"
+        android:layout_width="304dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="280dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/enter_email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="Autofill,LabelFor,TextSizeCheck" />
+
+    <EditText
+        android:id="@+id/txtcnic"
+        android:layout_width="304dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="296dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/enter_cnic"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/txtmobileno"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.81"
+        tools:ignore="Autofill,LabelFor,TextSizeCheck" />
+
+    <EditText
+        android:id="@+id/txtmobileno"
+        android:layout_width="304dp"
+        android:layout_height="59dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/enter_mobile_no"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/txtcity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtemail"
+        app:layout_constraintVertical_bias="0.848"
+        tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,TextSizeCheck" />
+
+    <EditText
+        android:id="@+id/txtpassword"
+        android:layout_width="304dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="208dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/enter_password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/txtemail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,TextSizeCheck" />
+
+    <EditText
+        android:id="@+id/txtcity"
+        android:layout_width="304dp"
+        android:layout_height="59dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/enter_city"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.769"
+        tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,TextSizeCheck" />
+
+    <Button
+        android:id="@+id/btnsaverecord"
+        android:layout_width="135dp"
+        android:layout_height="62dp"
+        android:background="@drawable/my_button"
+        android:onClick="SaveRecord"
+        android:text="@string/save"
+        android:textColor="#FBF5EC"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtpassword"
+        app:layout_constraintVertical_bias="0.836"
+        tools:ignore="TextSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

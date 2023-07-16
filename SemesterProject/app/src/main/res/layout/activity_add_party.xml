@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBF5EC"
+    tools:context=".AddParty">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="393dp"
+            android:layout_height="78dp"
+            android:gravity="center"
+            android:text="Add New Party"
+            android:textColor="@color/black"
+            android:textSize="45dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.067"
+            tools:ignore="SpUsage" />
+
+        <EditText
+            android:id="@+id/txtpartysymbol"
+            android:layout_width="300dp"
+            android:layout_height="65dp"
+            android:layout_marginBottom="392dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter Party Symbol"
+            android:inputType="text"
+            android:shadowRadius="5"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btnadminlogin"
+            android:layout_width="151dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="44dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="Cast Vote"
+            android:onClick="moveToCastVote"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="TextSizeCheck" />
+
+        <EditText
+            android:id="@+id/txtpartyname"
+            android:layout_width="300dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="48dp"
+            android:backgroundTint="@color/black"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter Party Name"
+            android:inputType="textEmailAddress"
+            android:shadowRadius="5"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+
+        <EditText
+            android:id="@+id/txtarea"
+            android:layout_width="300dp"
+            android:layout_height="65dp"
+            android:layout_marginBottom="292dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter Area"
+            android:inputType="text"
+            android:shadowRadius="5"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtpartyname"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="NotSibling,UnknownIdInLayout" />
+
+        <Button
+            android:id="@+id/btncastvote"
+            android:layout_width="186dp"
+            android:layout_height="56dp"
+            android:layout_marginBottom="180dp"
+            android:background="@drawable/my_button"
+            android:elevation="5dp"
+            android:gravity="center"
+            android:onClick="moveToSaveParty"
+            android:shadowRadius="10"
+            android:text="Add"
+            android:textColor="#FBF5EC"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="SpUsage,VisualLintWearMargin,VisualLintBounds" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

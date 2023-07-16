@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBF5EC"
+    tools:context=".AdminLoginScreen">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="214dp"
+        android:layout_height="158dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.09"
+        app:srcCompat="@drawable/logo3"
+        tools:ignore="ContentDescription,VisualLintWearMargin,VisualLintBounds" />
+
+    <EditText
+        android:id="@+id/txtemail"
+        android:layout_width="300dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="68dp"
+        android:backgroundTint="@color/black"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter email"
+        android:inputType="textEmailAddress"
+        android:shadowRadius="5"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/btncastvote"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.007" />
+
+    <EditText
+        android:id="@+id/txtpassword"
+        android:layout_width="300dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="292dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter password"
+        android:inputType="textPassword"
+        android:shadowRadius="5"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtemail"
+        app:layout_constraintVertical_bias="0.933" />
+
+    <Button
+        android:id="@+id/btncastvote"
+        android:layout_width="186dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="180dp"
+        android:background="@drawable/my_button"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:onClick="moveToAdminDashboard"
+        android:shadowRadius="10"
+        android:text="Login"
+        android:textColor="#FBF5EC"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.947"
+        tools:ignore="SpUsage,VisualLintWearMargin,VisualLintBounds" />
+
+    <Button
+        android:id="@+id/btnadminlogin"
+        android:layout_width="151dp"
+        android:layout_height="50dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="User | Login"
+        android:onClick="moveToUserLogin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btncastvote"
+        app:layout_constraintVertical_bias="0.503"
+        tools:ignore="TextSizeCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

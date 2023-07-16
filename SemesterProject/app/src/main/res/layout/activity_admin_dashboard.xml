@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBF5EC"
+    tools:context=".AdminDashboard">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="393dp"
+        android:layout_height="78dp"
+        android:gravity="center"
+        android:text="Admin Dashboard"
+        android:textColor="@color/black"
+        android:textSize="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024"
+        tools:ignore="SpUsage" />
+
+    <Button
+        android:id="@+id/btnaddparty"
+        android:layout_width="180dp"
+        android:layout_height="217dp"
+        android:background="@drawable/dashboard_button"
+        android:onClick="moveToAddParty"
+        android:text="Add Party"
+        android:textColor="#FBF5EC"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnannouncements"
+        app:layout_constraintEnd_toStartOf="@+id/btncheckvotes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.842" />
+
+    <Button
+        android:id="@+id/btncheckvotes"
+        android:layout_width="180dp"
+        android:layout_height="217dp"
+        android:background="@drawable/dashboard_button"
+        android:elevation="10dp"
+        android:onClick="moveToCheckVotes"
+        android:text="Check Votes"
+        android:textColor="#FBF5EC"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.119" />
+
+    <Button
+        android:id="@+id/btnannouncements"
+        android:layout_width="180dp"
+        android:layout_height="217dp"
+        android:layout_marginTop="388dp"
+        android:background="@drawable/dashboard_button"
+        android:onClick="moveToAnnouncements"
+        android:text="Announcements"
+        android:textColor="#FBF5EC"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnupdateprofile"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnupdateprofile"
+        android:layout_width="180dp"
+        android:layout_height="217dp"
+        android:background="@drawable/dashboard_button"
+        android:elevation="10dp"
+        android:onClick="moveToUpdateProfile"
+        android:text="Update Profile"
+        android:textColor="#FBF5EC"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btncheckvotes"
+        app:layout_constraintVertical_bias="0.176" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/my_button"
+        android:text="Back"
+        android:textColor="#FBF5EC"
+        android:textStyle="bold"
+        android:onClick="moveToMain"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.105"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

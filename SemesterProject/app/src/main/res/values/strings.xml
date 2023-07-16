@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">SemesterProject</string>
+    <string name="vote">VOTE</string>
+    <string name="admin_user_login">Admin User | Login</string>
+    <string name="user_registration">User Registration</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_cnic">Enter CNIC</string>
+    <string name="enter_mobile_no">Enter Mobile No</string>
+    <string name="enter_gender">Enter Gender</string>
+    <string name="enter_city">Enter City</string>
+    <string name="save">SAVE</string>
+    <string name="party_name">Party Name</string>
+    <string name="party_symbol">Party Symbol</string>
+    <string name="area">Area</string>
+    <string name="name">Party Name</string>
+    <string name="txtfieldarea">Area</string>
+    <string name="enter_password">Enter Password</string>
+</resources>
